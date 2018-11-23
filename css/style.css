@@ -34,7 +34,27 @@ nav ul li {
   padding: 1em 0;
 }
 
+@media only screen and (max-width: 519px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    list-style-type: none;
+    margin-left: initial;
+    padding: 1em 0;
+  }
+}
+
 /* SECTION 1: Carousel */
+.section1 {
+  background-color: lightslategray;
+}
+
 .carousel {
   display: flex;
   flex-wrap: wrap;
@@ -88,6 +108,10 @@ nav ul li {
 }
 
 /* Footer */
+.bottom {
+  background-color: lightslategray;
+}
+
 footer {
   display: flex;
   align-items: center;
@@ -104,11 +128,7 @@ footer a {
   padding: 1em;
 }
 
-.bottom {
-  background-color: lightgray;
-}
-
-nav ul {
+footer ul {
   display: flex;
   flex-wrap: wrap;
 }

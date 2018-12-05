@@ -4,23 +4,19 @@ html {
 }
 
 .container {
-  padding: 2.5% 15%;
+  padding: 1em 6em;
 }
 
-/* Header & Nav */
+/* Header, Nav & Logo */
 header {
   display: flex;
   justify-content: center;
+  background-color: #aed6c5;
 }
 
 nav {
   display: flex;
   align-items: center;
-}
-
-nav img {
-  height: 80px;
-  width: 80px;
 }
 
 nav ul {
@@ -32,6 +28,25 @@ nav ul li {
   list-style-type: none;
   margin-left: 30px;
   padding: 1em 0;
+}
+
+nav ul li a {
+  padding: 0 0.6em;
+  text-transform: uppercase;
+}
+
+.header-socials {
+  margin-left: 3em;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  height: 10em;
+  width: 10em;
 }
 
 @media only screen and (max-width: 519px) {
@@ -52,7 +67,7 @@ nav ul li {
 
 /* SECTION 1: Carousel */
 .section1 {
-  background-color: lightslategray;
+  
 }
 
 .carousel {
@@ -67,10 +82,20 @@ nav ul li {
   flex-direction: column;
 }
 
-.car-item span {
+.car-item img {
+  width: 10em;
+  height: 15em;
+  margin: 0 0.8em;
+  border: 1px solid black;
+}
+
+.section1 .carousel .car-item span {
   display: flex;
   justify-content: center;
   padding: 1em 0;
+  text-transform: uppercase;
+  position: relative;
+  bottom: 25%;
 }
 
 /* SECTION 2: Articles */
@@ -109,7 +134,7 @@ nav ul li {
 
 /* Footer */
 .bottom {
-  background-color: lightslategray;
+  
 }
 
 footer {

@@ -99,9 +99,15 @@ nav ul li a {
 }
 
 /* SECTION 2: Articles */
+.section2 {
+  display: flex;
+  justify-content: center;
+}
+
 .main-content {
   display: flex;
   justify-content: center;
+  width: 850px;
 }
 
 .articles {
@@ -119,8 +125,12 @@ nav ul li a {
   margin-bottom: 1em;
 }
 
+#article1 {
+  background-image: url(../images/edmell_thesuperstitions.jpeg)
+}
+
 .aboutme-box {
-  width: 100%;
+  width: 60%;
   min-width: 150px;
   height: 300px;
   border: 1px solid black;

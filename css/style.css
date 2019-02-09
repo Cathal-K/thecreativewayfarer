@@ -178,16 +178,14 @@ nav ul li a {
   width: 100%;
   border-top: 2px solid #aed6c5;
   border-bottom: 2px solid #aed6c5;
-  display: flex;
-  justify-content: center;
-}
-
-.article-box .article-box-footer :last-child{
-  text-align: end;
 }
 
 .article-box .article-socials {
   text-align: center;
+}
+
+.article-box .socials-date {
+  text-align: end;
 }
 
 .article-box-footer .fab {

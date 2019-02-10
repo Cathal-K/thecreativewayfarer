@@ -8,10 +8,18 @@ html {
 }
 
 /* Header, Nav & Logo */
+
 header {
   display: flex;
   justify-content: center;
   background-color: #aed6c5;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.invisible-header {
+  visibility: hidden;
 }
 
 nav {
@@ -65,7 +73,7 @@ nav ul li a {
   }
 }
 
-/* SECTION 1: Carousel */
+/* SECTION 2: Carousel */
 
 .carousel {
   display: flex;
@@ -86,7 +94,7 @@ nav ul li a {
   border: 1px solid black;
 }
 
-.section1 .carousel .car-item span {
+.section2 .carousel .car-item span {
   display: flex;
   justify-content: center;
   padding: 1em 0;
@@ -95,8 +103,8 @@ nav ul li a {
   bottom: 25%;
 }
 
-/* SECTION 2: Articles */
-.section2 {
+/* SECTION 3: Articles */
+.section3 {
   display: flex;
   justify-content: center;
 }
@@ -179,10 +187,7 @@ nav ul li a {
   border-bottom: 2px solid #aed6c5;
   display: flex;
   justify-content: center;
-}
-
-.article-box .article-box-footer :last-child{
-  text-align: end;
+  position: relative;
 }
 
 .article-box .article-socials {
@@ -191,6 +196,12 @@ nav ul li a {
 
 .article-box-footer .fab {
   padding: 0.6em;
+}
+
+.article-box .socials-date {
+  position: absolute;
+  top: .65em;
+  right: 1em;
 }
 
 .aboutme-box {

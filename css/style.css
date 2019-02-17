@@ -136,6 +136,8 @@ nav ul li a {
   width: 100%;
   min-width: 150px;
   margin-bottom: 3em;
+  display: flex;
+  flex-direction: column;
 }
 
 .article-box img {
@@ -158,11 +160,23 @@ nav ul li a {
   
 }
 
+.article-box .date {
+  align-self: center;
+  padding-bottom: 1em;
+}
+
 .article-box hr {
   width: 60%;
   margin: 0 auto;
   height: 2px;
-  background-color:#666;
+  background-color:#ff986a;
+}
+
+.article-box .hr-bottom {
+  width: 90%;
+  margin: 0 auto;
+  height: 2px;
+  background-color:#aed6c5;
 }
 
 .article-box #article_exerpt {
@@ -172,6 +186,7 @@ nav ul li a {
 .article-box span {
   text-align: center;
   text-transform: uppercase;
+  padding: 0.6em;
 }
 
 .article-box #read_more {
@@ -197,12 +212,6 @@ nav ul li a {
 
 .article-box-footer .fab {
   padding: 0.6em;
-}
-
-.article-box .socials-date {
-  position: absolute;
-  top: .65em;
-  right: 1em;
 }
 
 /* Sidebar & About Me */

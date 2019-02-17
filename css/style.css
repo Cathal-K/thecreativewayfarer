@@ -12,7 +12,7 @@ html {
 header {
   display: flex;
   justify-content: center;
-  background-color: #aed6c5;
+  background-color: #ff986a;
   position: fixed;
   width: 100%;
   z-index: 10;
@@ -41,6 +41,8 @@ nav ul li {
 nav ul li a {
   padding: 0 0.6em;
   text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .header-socials {
@@ -112,7 +114,7 @@ nav ul li a {
 .main-content {
   display: flex;
   justify-content: center;
-  width: 850px;
+  width: 70em;
 }
 
 @media only screen and (max-width: 631px) {
@@ -133,8 +135,7 @@ nav ul li a {
 .article-box {
   width: 100%;
   min-width: 150px;
-  border: 1px solid black;
-  margin-bottom: 1em;
+  margin-bottom: 3em;
 }
 
 .article-box img {
@@ -204,13 +205,82 @@ nav ul li a {
   right: 1em;
 }
 
-.aboutme-box {
+/* Sidebar & About Me */
+
+.sidebar-box {
   width: 60%;
   min-width: 150px;
-  height: 300px;
-  border: 1px solid black;
+  height: auto;
 }
 
+.sidebar-box #aboutme {
+  border-bottom: 2px solid #ff986a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-box #aboutme img {
+  height: 10em;
+  width: 10em;
+}
+
+.sidebar-box #aboutme p {
+  padding: 2em;
+}
+
+/* INSTAGRAM */
+.sidebar-box #instagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid #ff986a;
+}
+
+.sidebar-box #instagram h2 {
+  padding: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* WHERE IN THE WORLD */
+.sidebar-box #whereintheworld {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid #ff986a;
+}
+
+.sidebar-box #whereintheworld h2 {
+  padding: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* POPULAR POSTS */
+.sidebar-box #popularposts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid #ff986a;
+}
+
+.sidebar-box #popularposts h2 {
+  padding: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* JOIN THE JOURNEY */
+.sidebar-box #jointhejourney {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid #ff986a;
+}
+
+.sidebar-box #jointhejourney h2 {
+  padding: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 /* Footer */
 
 footer {
@@ -219,6 +289,7 @@ footer {
   justify-content: center;
   width: 100%;
   height: 250px;
+  background-color: #aed6c5;
 }
 
 footer span {

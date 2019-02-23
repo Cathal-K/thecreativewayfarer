@@ -57,6 +57,7 @@ nav ul li a {
 .logo img {
   height: 10em;
   width: 10em;
+  border-bottom: 2px solid #ff986a;
 }
 
 @media only screen and (max-width: 519px) {
@@ -231,7 +232,7 @@ nav ul li a {
 
 .article-page-box h2 {
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.8em;
   text-align: center;
   text-transform: uppercase;
   padding: 0.6em 0;
@@ -246,7 +247,7 @@ nav ul li a {
 
 .article-page-box .date {
   align-self: center;
-  padding-bottom: 1em;
+  padding: 1em 0;
 }
 
 .article-page-box hr {
@@ -254,6 +255,17 @@ nav ul li a {
   margin: 0 auto;
   height: 2px;
   background-color:#ff986a;
+  border: 0;
+}
+
+.article-page-box .article-page-box-share {
+  display: flex;
+  align-self: center;
+  padding: 1em 0;
+}
+
+.article-page-box .article-page-box-share li{
+  padding: 0.5em;
 }
 
 .article-page-box .hr-bottom {
@@ -261,6 +273,8 @@ nav ul li a {
   margin: 0 auto;
   height: 2px;
   background-color:#aed6c5;
+  border: 0;
+  margin-top: 1.5em;
 }
 
 .article-page-box #article_exerpt {
@@ -270,7 +284,6 @@ nav ul li a {
 .article-page-box span {
   text-align: center;
   text-transform: uppercase;
-  padding: 0.6em;
 }
 
 .article-page-box #read_more {
@@ -297,6 +310,8 @@ nav ul li a {
 .article-page-box-footer .fab {
   padding: 0.6em;
 }
+
+
 
 /* Sidebar & About Me */
 

@@ -135,7 +135,7 @@ nav ul li a::after {
 .main-content {
   display: flex;
   justify-content: center;
-  width: 70em;
+  width: 75%;
 }
 
 @media only screen and (max-width: 631px) {
@@ -252,7 +252,7 @@ nav ul li a::after {
 
 .article-page-box h2 {
   font-weight: bold;
-  font-size: 1.8em;
+  font-size: 2.7em;
   text-align: center;
   text-transform: uppercase;
   padding: 0.6em 0;
@@ -297,13 +297,16 @@ nav ul li a::after {
   margin-top: 1.5em;
 }
 
-.article-page-box #article_exerpt {
-  margin: 1em 0;
+.article-page-box .article-page-content h2{
+  font-weight: 600;
 }
 
-.article-page-box span {
-  text-align: center;
-  text-transform: uppercase;
+.article-page-box .article-page-content h4{
+  font-weight: 600;
+}
+
+.article-page-box .article-page-content p{
+  line-height: 1.2em;
 }
 
 .article-page-box #read_more {
@@ -409,6 +412,84 @@ nav ul li a::after {
   font-weight: bold;
   text-transform: uppercase;
 }
+
+/* Other Sidebars*/
+
+.article-page-sidebar-box {
+  width: 40%;
+  min-width: 150px;
+  height: auto;
+}
+
+.article-page-sidebar-box #aboutme {
+  border-bottom: 2px solid #ff986a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-page-sidebar-box #aboutme img {
+  height: 10em;
+  width: 10em;
+}
+
+.article-page-sidebar-box #aboutme p {
+  padding: 2em;
+}
+
+/* INSTAGRAM */
+.article-page-sidebar-box #instagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid #ff986a;
+}
+
+.article-page-sidebar-box #instagram h2 {
+  padding: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* WHERE IN THE WORLD */
+.article-page-sidebar-box #whereintheworld {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid #ff986a;
+}
+
+.article-page-sidebar-box #whereintheworld h2 {
+  padding: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* POPULAR POSTS */
+.article-page-sidebar-box #popularposts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid #ff986a;
+}
+
+.article-page-sidebar-box #popularposts h2 {
+  padding: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* JOIN THE JOURNEY */
+.article-page-sidebar-box #jointhejourney {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid #ff986a;
+}
+
+.article-page-sidebar-box #jointhejourney h2 {
+  padding: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 /* Footer */
 
 footer {

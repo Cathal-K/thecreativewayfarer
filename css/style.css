@@ -81,6 +81,7 @@ nav ul li a::after {
   border-bottom: 2px solid #ff986a;
 }
 
+/* MEDIA QUERIES */
 @media only screen and (max-width: 519px) {
   nav {
     flex-direction: column;
@@ -352,8 +353,8 @@ nav ul li a::after {
 }
 
 .sidebar-box #aboutme img {
-  height: 10em;
-  width: 10em;
+  width: 100%;
+  max-width: 20em;
 }
 
 .sidebar-box #aboutme p {
@@ -429,8 +430,7 @@ nav ul li a::after {
 }
 
 .article-page-sidebar-box #aboutme img {
-  height: 10em;
-  width: 10em;
+  width: 100%;
 }
 
 .article-page-sidebar-box #aboutme p {

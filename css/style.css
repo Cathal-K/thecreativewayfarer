@@ -12,67 +12,59 @@ a {
   text-decoration: none; /* no underline */
 }
 
-/* Header, Nav & Logo */
-
-header {
-  display: flex;
-  justify-content: center;
-  background-color: #ff986a;
-  position: fixed;
-  width: 100%;
-  z-index: 10;
-}
-
-.invisible-header {
-  visibility: hidden;
-}
+/* NAVBAR */
 
 nav {
-  display: flex;
-  align-items: center;
-  width: 100%;
+  background-color: #ff986a;
+  position: fixed;
+  top: 0;
+  width: 100%
 }
 
-.nav-right {
-  margin-left:auto;
-}
-
-nav ul {
+.full-nav {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: smaller;
+  font-weight: 600;
 }
 
 nav ul li {
-  list-style-type: none;
-  margin-left: 2em;
-  padding: 1em 0;
-  text-align: center;
+  padding: 1em 2.5em;
 }
 
-nav ul li a {
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 600;
-  z-index: 1;
+@media only screen and (min-width: 900px) {
+  .mobile-nav {
+    display: none;
+  }
+
 }
 
-nav ul li a:hover {
-  color: white;
-  cursor: pointer; 
-  font-size: medium;
+@media only screen and (max-width: 900px) {
+  .full-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    text-transform: uppercase;
+    font-size: smaller;
+    font-weight: 600;
+  }
+
+  .mobile-nav-home {
+    float: left;
+  }
+
+  .mobile-nav-menu {
+    float: right;
+  }
+
 }
 
-nav ul li a::after {
-  display: block;
-  content: attr(title);
-  font-size: medium;
-  height: 0;
-  overflow: hidden;
-  visibility: hidden;
-}
+/* SECTION 1: TCW Logo */
 
-.header-socials {
-  margin-left: 3em;
+.section1 {
+  margin-top: 3em;
 }
 
 .logo {
@@ -84,26 +76,6 @@ nav ul li a::after {
   height: 18em;
   padding-bottom: 1em;
   border-bottom: 2px solid #ff986a;
-}
-
-@media only screen and (max-width: 852px) {
-  nav {
-    flex-direction: column;
-  }
-
-  nav ul {
-    flex-direction: column;
-  }
-
-  .nav-center {
-    display: none;
-  }
-
-  nav ul li {
-    list-style-type: none;
-    margin-left: initial;
-    padding: 1em 0;
-  }
 }
 
 /* SECTION 2: Carousel */

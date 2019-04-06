@@ -51,6 +51,15 @@ nav ul li:hover a {
     display: none;
   }
 
+  .open {
+    display: initial;
+    text-align: center;
+  }
+
+  .open:hover a{
+    color: white;
+  }
+
   .mobile-nav {
     text-transform: uppercase;
     font-size: smaller;
@@ -480,8 +489,30 @@ nav ul li:hover a {
 
 /* Footer */
 
+.follow-me {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.follow-me p{
+  padding: 1em 1em;
+}
+
+.follow-me a{
+  color: #ff986a;
+}
+
+.follow-me .insta-thumbs {
+  padding-bottom: 1em;
+}
+
+.follow-me .insta-thumbs img{
+  padding: 0 1em;
+}
+
 footer {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -489,8 +520,24 @@ footer {
   background-color: #aed6c5;
 }
 
+footer .footer-socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5em;
+  width: 25em;
+  max-width: 80%;
+  border-bottom: 2px solid #ff986a;
+}
+
+footer .footer-socials i{
+  padding: .5em;
+  opacity: 0.7;
+}
+
 footer span {
-  padding: 1em;
+  color: #293132;
+  padding: 2em;
 }
 
 footer a {
